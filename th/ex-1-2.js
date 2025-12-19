@@ -7,6 +7,14 @@
 */
 
 // Start coding here
+const sumNegativeNumbers = (numbers) => {
+    return numbers.reduce((sum, number) => {
+        if (number < 0) {
+            return sum + number;
+        }
+        return sum;
+    },0);
+};
 
 const numbers1 = [3, -5, 10, 12, -7, 0, 8, 2];
 console.log(sumNegativeNumbers(numbers1)); // -12
